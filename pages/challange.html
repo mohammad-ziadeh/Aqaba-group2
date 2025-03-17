@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حكايتنا</title>
+    <link rel="icon" type="image/png" href="/pic/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/challange.css">
+    <style>
+        :root {
+            --primary-color: #211C84;
+            --secondary-color: #4D55CC;
+            --third-color: #7A73D1;
+            --textNav-color: #FFB200;
+            --BG-color: #211C84;
+            --text-color: #ffffff;
+            --table-border-color: #d1d5db;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #eeeeee;
+            color: var(--text-color);
+        }
+
+        nav {
+            background-color: #333;
+
+        }
+
+        .nav-style {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            z-index: 10;
+            flex-direction: row-reverse;
+            background-color: transparent;
+
+            width: 100%;
+            color: #FFB200;
+            height: 60px;
+            top: 0;
+            padding: 10px 0;
+        }
+
+        @font-face {
+            font-family: 'BOONE Regular';
+            font-style: normal;
+            font-weight: normal;
+            src: local('BOONE Regular'), url('BOONE.woff') format('woff');
+        }
+
+        .nav-links a {
+            font-family: "Amiri", serif;
+            font-weight: 500;
+            color: #FFB200;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            padding: 10px 10px;
+            font-size: 25px;
+            position: relative;
+            top: 15px;
+        }
+
+        .login-nav {
+            font-family: "Amiri", serif;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 10px 10px;
+            font-size: 20px;
+            position: relative;
+            top: 15px;
+        }
+
+        .login-btn {
+            border-radius: 10px;
+            padding: 10px 10px;
+            position: relative;
+            bottom: 10px;
+            text-decoration: none;
+            background-color: #FFB200;
+            border: #211C84 1px solid;
+            color: #211C84;
+        }
+
+        .brand-name a {
+            font-size: 36px;
+            position: relative;
+            bottom: 20px;
+            color: #FFB200;
+            font-family: "Amiri", serif;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-icons i {
+            font-size: 24px;
+            color: rgb(255, 255, 255);
+            transition: color 0.3s ease;
+            padding: 10px 10px;
+        }
+
+
+        .nav-style.scrolled {
+            background-color: #004185;
+            color: rgb(255, 255, 255);
+        }
+
+        .nav-style.scrolled a,
+        .nav-style.scrolled i {
+            color: rgb(255, 255, 255);
+        }
+
+        .nav-links a:hover,
+        .brand-name a:hover,
+        .nav-icons i:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        .gradient-header {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-custom {
+            background-color: var(--textNav-color);
+            color: var(--primary-color);
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--third-color);
+            color: white;
+        }
+
+        .fixed-image-size {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #004185;
+            /* لون خلفية الكاردات */
+            border: 1px solid var(--table-border-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-body {
+            flex-grow: 1;
+            padding: 20px;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="nav-style " id="navbar">
+
+
+
+
+        <div class="brand-name">
+            <a href="" style="color: #FFB200;  font-family:Diwani Letter, serif;font-size: 50px;">فليتنافسون
+            </a>
+        </div>
+        <div class="login-nav">
+            <a href="../register/login.html" class="login-btn">تسجيل الدخول</a>
+
+        </div>
+
+    </nav>
+    <div style="height: 30px; background-color: #004185 ;"></div>
+    <!-- Header Section -->
+    <section class="gradient-header text-center py-5" style="background-color: #004185;">
+        <div class="container">
+            <h1 class="display-4 fw-bold  " style="color: #FFB200;">مبادرة تحدي الخير</h1>
+            <p class="lead">"انضم إلى مبادرة تحدي الخير وكن جزءًا من التغيير الإيجابي! شارك في التحديات التطوعية، كن من
+                رواد الخير الذين يتركون أثرًا في مجتمعهم,<br> كل عمل صغير يُحدث فرعًا كبيرًا. هيا بنا نصنع الفرق معًا!"
+            </p>
+        </div>
+    </section>
+
+    <!-- Initiative Details -->
+    <section class="container py-5">
+        <h2 class="fw-bold" style="color: #FFB200;">تفاصيل المبادرة</h2>
+        <p class="lead" style="color: #004185;">انضم إلى مبادرة تحدي الخير وكن جزءًا من رحلة العطاء والتغيير الإيجابي!
+            هذه المبادرة تهدف إلى تشجيع الأفراد على المشاركة في الأعمال التطوعية من خلال تحديات ممتعة ومحفزة، حيث يمكنك
+            كسب النقاط عند إكمال المهام التطوعية المختلفة.</p>
+    </section>
+
+    <!-- Activities Table -->
+    <!-- Challenges Section -->
+    <section class="container py-5">
+        <h2 class="text-warning fw-bold">جدول التحديات</h2>
+        <div class="row">
+            <!-- Challenge 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-utensils fa-2x text-warning me-3"></i>
+                            <h5 class="card-title text-warning mb-0">توزيع وجبات الإفطار</h5>
+                        </div>
+                        <p class="card-text">شارك في توزيع وجبات الإفطار على الأسر المحتاجة وساعد في إسعادهم خلال شهر
+                            رمضان.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>الموعد:</strong> 5 رمضان</li>
+                        </ul>
+                        <button class="btn btn-warning w-100"
+                            onclick="window.open('https://www.tua.jo/ar/donation-types/%D8%A7%D9%84%D8%B7%D8%B1%D9%88%D8%AF-%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%D8%A9')">سجل
+                            الآن</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenge 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-hands-wash fa-2x text-warning me-3"></i>
+                            <h5 class="card-title text-warning mb-0">حملة تنظيف المساجد</h5>
+                        </div>
+                        <p class="card-text">انضم إلى حملة تنظيف المساجد وساهم في توفير بيئة نظيفة للمصلين.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>الموعد:</strong> 10 رمضان</li>
+                        </ul>
+                        <button class="btn btn-warning w-100"
+                            onclick="window.open('https://www.awqaf.gov.jo/AR/Pages/%D9%85%D8%AF%D9%8A%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AC%D8%AF')">سجل
+                            الآن</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenge 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-child fa-2x text-warning me-3"></i>
+                            <h5 class="card-title text-warning mb-0">زيارة دور الأيتام</h5>
+                        </div>
+                        <p class="card-text">قم بزيارة دار أيتام وقدم الهدايا والأنشطة الترفيهية للأطفال.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>الموعد:</strong> 15 رمضان</li>
+                        </ul>
+                        <button class="btn btn-warning w-100"
+                            onclick="window.open('http://www.civilsociety-jo.net/ar/organizations/13', '_blank')">سجل
+                            الآن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="container py-5">
+        <h2 class="text-warning fw-bold">قصص النجاح</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/pic/1.jpg" class="card-img-top fixed-image-size" alt="قصة نجاح 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">فريق "يد العون"</h5>
+                        <p class="card-text">نجح فريق "يد العون" في توزيع أكثر من 500 وجبة إفطار خلال رمضان الماضي، مما
+                            ساعد العديد من الأسر المحتاجة.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/pic/2.jpg" class="card-img-top fixed-image-size" alt="قصة نجاح 2">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">حملة "نظافة المساجد"</h5>
+                        <p class="card-text">شارك أكثر من 50 متطوعًا في حملة تنظيف المساجد، مما ساهم في توفير بيئة نظيفة
+                            للمصلين.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="/pic/30.jpg" class="card-img-top fixed-image-size" alt="قصة نجاح 3">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">زيارة دور الأيتام</h5>
+                        <p class="card-text">مجموعة من المتطوعين قاموا بزيارة دار أيتام وقدموا الهدايا والأنشطة
+                            الترفيهية للأطفال، مما أسعد قلوبهم.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h3>منصة فليتنافسون
+                    الرمضانية</h3>
+                <p>نسعى لتعزيز روح التطوع والعطاء خلال شهر رمضان المبارك.</p>
+            </div>
+            <div>
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الصفحة الرئيسية</a></li>
+                    <li><a href="register.html">تسجيل المتطوعين</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>اتصل بنا</h4>
+                <p>البريد الإلكتروني: Falyatanafson@gmail.com</p>
+                <p>الهاتف: 798283130 962+</p>
+            </div>
+            <div>
+                <h4>شراكاتنا</h4>
+                <ul>
+                    <li><a href="https://www.tua.jo/ar/donation-types/الطرود-الغذائية-الشهرية">وزارة الأوقاف - مديرية
+                            المساجد</a></li>
+                    <li><a href="http://www.civilsociety-jo.net/ar/organizations/13">تكية أم علي</a></li>
+                    <li><a href="https://www.awqaf.gov.jo/AR/Pages/مديرية_المساجد">دليل منظمات المجتمع المدني
+                            الأردني</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-top">
+            <p>© 2025 منصة فليتنافسون
+                الرمضانية. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <style>
+        .footer {
+            background-color: #004185;
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer h3,
+        .footer h4 {
+            color: #fbbf24;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer p,
+        .footer a {
+            color: #d1d5db;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #fbbf24;
+        }
+
+        .footer .border-top {
+            border-top: 1px solid #4a5568;
+            padding-top: 2rem;
+            text-align: center;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.onscroll = function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
+
+    </script>
+</body>
+</html>
